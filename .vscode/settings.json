@@ -1,0 +1,84 @@
+{
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.wordWrap": "off",
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "editor.insertSpaces": false,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    ".git": true,
+    "**/.DS_Store": true,
+    "build/**/*.js.map": true,
+    "build/**/*.js": {
+      "when": "$(basename).ts"
+    }
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".build/**": true,
+    "i18n/**": true
+  },
+  "files.readonlyInclude": {
+    "**/node_modules/**/*.*": true,
+    "**/package-lock.json": true,
+    "build/**/*.js": true,
+  },
+  "files.readonlyExclude": {
+    "build/*.js": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "git.ignoreLimitWarning": true,
+  "git.branchProtection": [
+    "main",
+    "distro",
+    "release/*"
+  ],
+  "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+  "git.branchRandomName.enable": true,
+  "git.pullBeforeCheckout": true,
+  "git.mergeEditor": true,
+  "files.insertFinalNewline": true,
+  "typescript.tsc.autoDetect": "off",
+  "debug.javascript.terminalOptions": {
+    "outFiles": [
+      "${workspaceFolder}/build/**/*.js"
+    ]
+  },
+  "application.experimental.rendererProfiling": true,
+  "editor.experimental.asyncTokenization": true,
+  "editor.experimental.asyncTokenizationVerification": true,
+  "terminal.integrated.suggest.enabled": true,
+  "inlineChat.enableV2": true,
+  "css.format.spaceAroundSelectorSeparator": true,
+  "eslint.useFlatConfig": true,
+  "editor.occurrencesHighlightDelay": 0,
+  "typescript.experimental.expandableHover": true,
+  "git.diagnosticsCommitHook.enabled": true,
+  "git.diagnosticsCommitHook.sources": {
+    "*": "error",
+    "ts": "warning",
+    "eslint": "warning"
+  },
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true
+}

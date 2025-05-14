@@ -1,0 +1,25 @@
+{
+  "name": "ai-watermark-stripper",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/bun": "latest",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
