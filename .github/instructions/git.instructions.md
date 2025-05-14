@@ -26,6 +26,8 @@ All commit messages MUST follow the [Conventional Commits](mdc:https:/www.conven
 [optional footer(s)]
 ```
 
+All developers must sign their Git commits using a verified GPG or SSH key. This ensures commit authenticity and accountability across the codebase.
+
 ### Types
 
 - `feat`: A new feature
@@ -162,12 +164,6 @@ Consider using pre-commit hooks to enforce these conventions:
 - Test execution
 - Branch naming validation
 - Protected branch validation
-
-## Using MCP Git in Cursor 🤖
-
-The Model Context Protocol (MCP) Git integration allows you to perform Git operations directly from Cursor while following our commit conventions.
-
-> **Important**: For proper path handling in MCP Git operations, please refer to the `mcp-git-path-encoding.mdc` rule file. This ensures consistent path handling across different platforms and prevents encoding issues.
 
 ### Basic MCP Git Commands
 
