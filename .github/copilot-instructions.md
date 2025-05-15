@@ -2,6 +2,10 @@
 
 This project is a web application that allows users to create and manage tasks. The application is built using React and Node.js, and it uses MongoDB as the database.
 
+## Security
+
+- You SHOULD NEVER have any sort of private secrets (e.g. API tokens). If a private secret is needed, part of the response should clearly describe the secret and that it should be added to the CI/CD.
+
 ## Indentation
 
 We use 2 spaces for indention. Please ensure that all code is indented correctly.
