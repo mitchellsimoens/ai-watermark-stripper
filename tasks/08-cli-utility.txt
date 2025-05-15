@@ -1,0 +1,5 @@
+Task: CLI Utility
+
+- Implement a simple Node.js CLI script (TypeScript) to strip invisible characters from a file.
+- Accept a file path as input, strip invisible characters, and overwrite the file.
+- Add a test for the CLI utility.

@@ -1,0 +1,7 @@
+Task: Text Input and Stripper UI
+
+- Create a component for direct text input (textarea or similar).
+- Display the input text with invisible characters highlighted.
+- Add a button to strip invisible characters from the input.
+- Add copy and download as .txt functionality for the cleaned text.
+- Use shadcn/ui components and Lucide icons for UI elements.

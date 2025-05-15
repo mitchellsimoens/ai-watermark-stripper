@@ -1,0 +1,5 @@
+Task: PWA and Offline Support
+
+- Configure next-pwa for offline support.
+- Add a manifest and icons for installability.
+- Ensure the app works offline after first load.

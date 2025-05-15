@@ -1,0 +1,7 @@
+Task: Main Layout and Theme
+
+- Create the main app layout with a responsive, mobile-first design.
+- Implement light/dark theme toggle using next-themes.
+- Use shadcn/ui components for header, footer, and main content area.
+- Add Lucide icons for UI polish.
+- Ensure the layout is accessible and visually appealing.

@@ -1,0 +1,5 @@
+Task: Analytics and Privacy
+
+- Integrate Cloudflare Web Analytics (no secrets, use the public snippet).
+- Add a privacy notice in the UI per README.
+- Ensure no cookies, trackers, or third-party scripts except analytics.

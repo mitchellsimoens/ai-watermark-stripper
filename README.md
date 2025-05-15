@@ -29,14 +29,23 @@ This app is entirely client-side, works offline as a PWA, and is MIT licensed fo
 
 1. User visits the site.
 2. Pastes in a block of suspicious text.
-3. App shows the cleaned version instantly below.
-4. User clicks **Copy** or **Download**.
+3. App shows the text with the characters highlighted.
+4. User clicks a button to remove invisible characters.
+5. User clicks **Copy** or **Download**.
 
 ### File Upload
 
 1. User drags a `.txt` file into the drop zone.
 2. App reads file client-side and removes invisible characters.
-3. Cleaned text is shown with **Copy** and **Download** options.
+3. App shows the text with the characters highlighted.
+4. User clicks a button to remove invisible characters.
+5. User clicks **Copy** or **Download**.
+
+### CLI Utility
+
+1. User executes a CLI command passing in the file to strip.
+2. App reads file and removes invisible characters.
+3. Cleaned text is written to the same file.
 
 ---
 
@@ -83,13 +92,13 @@ This app:
 ```bash
 git clone https://github.com/mitchellsimoens/ai-watermark-stripper.git
 cd ai-watermark-stripper
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 ### Build & Export for Cloudflare Pages
 
 ```bash
-npm run build
-npm run export
+bun run build
+bun run export
 ```

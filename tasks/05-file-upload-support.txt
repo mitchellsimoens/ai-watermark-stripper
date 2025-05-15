@@ -1,0 +1,7 @@
+Task: File Upload Support
+
+- Add a drag-and-drop file upload zone (accepting .txt and .md files).
+- Read file contents client-side using the FileReader API.
+- Display the file text with invisible characters highlighted.
+- Allow stripping and downloading the cleaned file.
+- Ensure privacy: do not transmit or store any file data.

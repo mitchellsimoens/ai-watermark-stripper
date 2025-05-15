@@ -1,0 +1,5 @@
+Task: Invisible Character Stripper Core
+
+- Implement a TypeScript utility function to strip invisible Unicode characters (e.g., \u200B, \uFEFF, etc.).
+- Implement a function to highlight invisible characters in a string for display.
+- Add unit tests for these utilities using Vitest.
