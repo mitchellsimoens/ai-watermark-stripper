@@ -1,12 +1,12 @@
 {
-	"servers": {
-		"git": {
-			"command": "uvx",
-			"args": [
-				"mcp-server-git",
-				"--repository",
-				"${workspaceFolder}"
-			]
-		}
-	}
+  "servers": {
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "${workspaceFolder}"
+      ]
+    }
+  }
 }
