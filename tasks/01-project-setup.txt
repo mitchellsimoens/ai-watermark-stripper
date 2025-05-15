@@ -1,0 +1,13 @@
+Task: Project Setup
+
+- Initialize a Next.js 14 project (App Router).
+- Set up TypeScript support.
+- Add Tailwind CSS and configure it.
+- Add shadcn/ui and configure it for component usage.
+- Add next-themes for theme support.
+- Add Lucide for icons.
+- Add next-pwa for PWA support.
+- Set up Vitest for testing.
+- Add Cloudflare Web Analytics integration (placeholder, no secrets).
+- Add a basic .gitignore and ensure all config files are present.
+- Ensure all code uses 2-space indentation and single quotes.

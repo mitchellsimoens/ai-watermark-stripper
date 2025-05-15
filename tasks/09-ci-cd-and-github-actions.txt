@@ -1,0 +1,5 @@
+Task: CI/CD and GitHub Actions
+
+- Add a GitHub Actions workflow for linting, testing, and building the app.
+- Ensure the workflow is compatible with Cloudflare Pages deployment.
+- Add commitlint and Husky for commit message and pre-commit hook enforcement.
