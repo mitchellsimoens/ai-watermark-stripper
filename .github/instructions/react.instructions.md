@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.tsx"
+applyTo: '**/*.tsx'
 ---
 
 ## React + TypeScript Coding Standards
@@ -26,6 +26,7 @@ applyTo: "**/*.tsx"
 - You MUST always prefer **composition over inheritance** when creating reusable components.
 - You SHOULD NEVER pass more than **5 props** to a single component. Use objects or context if more data needs to be passed.
 - For reusable components, you MUST use **generic types** where applicable (e.g., `<T>` for lists or forms).
+- You MUST always nest the component files in a folder named after the component (e.g., `Button/Button.tsx`, `Button/styles.ts`, etc.).
 
 ## State Management with TypeScript
 
@@ -49,7 +50,7 @@ applyTo: "**/*.tsx"
 
 ```ts
 const StyledButton = styled.button<{ isActive: boolean }>`
-  background-color: ${(props) => (props.isActive ? "blue" : "gray")};
+  background-color: ${(props) => (props.isActive ? 'blue' : 'gray')};
 `;
 ```
 

@@ -1,29 +1,50 @@
 {
   "name": "ai-watermark-stripper",
-  "module": "index.ts",
-  "type": "module",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .js,.ts,.tsx",
-    "format": "prettier --write .",
-    "prepare": "husky init"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.510.0",
+    "next": "^15.3.2",
+    "next-pwa": "^5.6.0",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.26.0",
-    "@types/bun": "latest",
-    "@typescript-eslint/parser": "^8.32.1",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^22.15.18",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitest/coverage-c8": "^0.33.0",
+    "@vitest/ui": "^3.1.3",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.26.0",
+    "eslint-config-next": "^15.3.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.1.0",
     "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.3",
-    "typescript-eslint": "^8.32.1"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "tailwindcss": "^4.1.7",
+    "tw-animate-css": "^1.2.9",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
+    "vitest": "^3.1.3"
   }
 }

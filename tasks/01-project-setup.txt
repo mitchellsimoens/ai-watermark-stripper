@@ -1,4 +1,5 @@
 Task: Project Setup
+Status: Completed
 
 - Initialize a Next.js 14 project (App Router).
 - Set up TypeScript support.

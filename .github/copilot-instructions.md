@@ -30,6 +30,25 @@ We use 2 spaces for indention. Please ensure that all code is indented correctly
 - Always surround loop and conditional bodies with curly braces.
 - Open curly braces always go on the same line as whatever necessitates them.
 - Always use TypeScript.
+- Always take the ESLint rules into account.
+- Import statements should be grouped and ordered as follows:
+  - Node.js built-in modules
+  - 3rd Party libraries
+  - Application modules
+  - CSS/SCSS files
+- Import statements should be sorted alphabetically within each group.
+- Import statements should be placed at the top of the file.
+- Use any import aliases only when necessary.
+- Use `import type` for importing types only.
+- Use `import { type }` for importing types from a module.
+- Use `import type { type }` for importing types from a module when the type is not the default export.
+- Use `import` statements instead of `require`.
+- Use `export` statements instead of `module.exports`.
+- Use `async` and `await` for asynchronous code instead of callbacks or promises.
+- Use `try/catch` for error handling in asynchronous code.
+- Use `console.error` for logging errors instead of `console.log`.
+- Use `console.warn` for logging warnings instead of `console.log`.
+- Use `console.info` for logging informational messages instead of `console.log`.
 - Parenthesized constructs should have no surrounding whitespace. A single space follows commas, colons, and semicolons in those constructs. For example:
 
 ```javascript
