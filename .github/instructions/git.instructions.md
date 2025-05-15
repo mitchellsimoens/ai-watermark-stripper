@@ -133,6 +133,10 @@ git tag -a v1.0.0 -m "version 1.0.0"
 git push origin main --tags
 ```
 
+### Feature Complete
+
+Once a pull request for a feature is merged, switch back to `main` branch, pull the latest and fetch and prune local branches that do not exist in the remote.
+
 ## Examples
 
 ✅ Good Commits:
