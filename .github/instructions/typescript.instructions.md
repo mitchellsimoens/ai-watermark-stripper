@@ -16,6 +16,7 @@ applyTo: "**/*.ts,**/*.tsx"
 - You MUST always use nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.
 - You SHOULD NEVER use non-null assertions (`!`) unless you are certain the value cannot be null or undefined.
 - You SHOULD NEVER introduce new types or values to the global namespace.
+- You SHOULD always use import aliases to avoid long relative paths.
 
 ## Best Practices for TypeScript Features
 
