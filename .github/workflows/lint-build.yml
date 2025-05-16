@@ -1,4 +1,4 @@
-name: Lint
+name: Lint & build
 
 on: push
 
@@ -16,3 +16,7 @@ jobs:
         run: bun install
       - name: Run ESLint
         run: bun run lint
+      - name: Build
+        # This step will run even if the previous steps fail
+        if: success() || failure()
+        run: bun run next:build
