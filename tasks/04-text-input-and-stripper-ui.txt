@@ -1,4 +1,5 @@
 Task: Text Input and Stripper UI
+Status: Completed
 
 - Create a component for direct text input (textarea or similar).
 - Display the input text with invisible characters highlighted.
