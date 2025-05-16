@@ -1,9 +1,13 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 import React from 'react';
 
 import './globals.css';
 import { CloudflareWebAnalytics } from '$/components/CloudflareWebAnalytics/CloudflareWebAnalytics';
+import Footer from '$/components/Footer';
+import Header from '$/components/Header';
+import Main from '$/components/Main';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,9 +30,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <Main>{children}</Main>
+          <Footer />
+        </ThemeProvider>
         <CloudflareWebAnalytics />
       </body>
     </html>
