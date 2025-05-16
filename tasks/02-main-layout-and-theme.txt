@@ -1,4 +1,5 @@
 Task: Main Layout and Theme
+Status: Completed
 
 - Create the main app layout with a responsive, mobile-first design.
 - Implement light/dark theme toggle using next-themes.
