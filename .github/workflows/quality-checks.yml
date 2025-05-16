@@ -10,7 +10,7 @@ jobs:
         task:
           - { name: 'lint', command: 'bun run lint' }
           - { name: 'build', command: 'bun run next:build' }
-          - { name: 'test', command: 'bunx vitest run --coverage' }
+          - { name: 'test', command: 'bun run test' }
     name: ${{ matrix.task.name }}
     steps:
       - name: Checkout repository
