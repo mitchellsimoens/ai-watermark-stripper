@@ -1,0 +1,26 @@
+name: Quality checks
+
+on: push
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        task:
+          - { name: 'lint', command: 'bun run lint' }
+          - { name: 'build', command: 'bun run next:build' }
+          - { name: 'test', command: 'bun run test' }
+    name: ${{ matrix.task.name }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install
+      - name: Run ${{ matrix.task.name }}
+        run: ${{ matrix.task.command }}
