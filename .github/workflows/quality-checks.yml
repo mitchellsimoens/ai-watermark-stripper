@@ -6,6 +6,7 @@ jobs:
   quality:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         task:
           - { name: 'lint', command: 'bun run lint' }
